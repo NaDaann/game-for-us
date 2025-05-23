@@ -1,0 +1,67 @@
+.card-container{
+    position: relative;
+    width: 12rem;
+    z-index: 9;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--background);
+    z-index: 10;
+}
+
+.card-date{
+    color: var(--grey-color);
+    background: var(--foreground);
+    padding: .3rem;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    border-radius: 1rem !important;
+    font-size: .6rem !important;
+    font-weight: 1000 !important;
+    border: 1px solid var(--background);
+}
+
+.card-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--background);
+    border-radius: 0.4rem;
+    z-index: 9;
+}
+
+.card-container:hover{
+    transform: scale(1.03);
+}
+.card-containers:hover:before, .card-containers:hover:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 400%;
+	width: calc(100% + 4px);
+    height: calc(100% + 4px);
+	z-index: 1;
+	animation: steam 20s linear infinite;
+    border-radius: 0.4rem;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.card-containers::after {
+	filter: blur(50px);
+}

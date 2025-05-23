@@ -1,0 +1,13 @@
+.plataform-container {
+    border-radius: 5rem;
+    width: 4.2rem;
+    margin-top: 1rem;
+}
+
+.plataform-image {
+    border-radius: 5rem;
+    width: 3rem;
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
