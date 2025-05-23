@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎮 Game For Us Web
 
-## Getting Started
+Um catálogo visual e moderno de jogos, desenvolvido com Next.js, React, TypeScript e Material UI.
 
-First, run the development server:
+![Preview](public/img/gta6.jpg)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Visão Geral
+
+O **Game For Us Web** é um projeto de vitrine de jogos, com foco em experiência visual, responsividade e performance. Cada jogo é apresentado em cards animados, com informações, imagens e preço formatado.
+
+---
+
+## 🚀 Tecnologias & Ferramentas
+
+- **Next.js** 15
+- **React** 19
+- **TypeScript**
+- **Material UI (MUI)**
+- **SWR** (data fetching reativo)
+- **Tailwind CSS**
+- **Custom CSS** (animações, gradientes, cursores SVG)
+
+---
+
+## 🖼️ Visual & Identidade
+
+- Paleta dinâmica (claro/escuro)
+- Cards com efeito hover, blur e gradiente animado
+- Cursores SVG personalizados
+- Layout responsivo e tipografia moderna (Geist)
+
+---
+
+## 📦 Estrutura dos Principais Componentes
+
+- `src/app/games/page.tsx` — Página principal dos jogos
+- `components/card-list.tsx` — Lista de cards de jogos
+- `components/card.tsx` — Card individual com animação e cor dominante
+- `components/game.tsx` — Exibe imagem, nome e preço do jogo
+
+### Exemplo de Card
+
+```tsx
+<GameCard game={{
+  id: 1,
+  name: "GTA 6",
+  image: "/img/gta6.jpg",
+  price: 299.99,
+  available_requests: 5
+}} />
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Instalação & Uso
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Instale as dependências
+yarn install # ou npm install
 
-## Learn More
+# Rode o servidor de desenvolvimento
+yarn dev # ou npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Acesse: [http://localhost:3000](http://localhost:3000)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Estrutura Resumida
 
-## Deploy on Vercel
+```
+src/
+  app/
+    games/
+      components/
+      css/
+  api/interfaces/
+  enums/
+  hooks/
+  libs/
+public/
+  img/
+  cursor/
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 👤 Autor
+
+Desenvolvido por Daniel Miranda.
+
+---
+
+## 📝 Licença
+
+Este projeto é open-source e está sob a licença MIT.
